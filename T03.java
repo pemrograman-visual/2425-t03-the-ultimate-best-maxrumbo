@@ -1,7 +1,10 @@
+//12S24037-Maxwell Rumahorbo
+//12S24030-Swasti Sihombing
+
 import java.util.*;
 import java.lang.Math;
 
-public class T03 {
+public class JavaApplication {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -16,11 +19,11 @@ public class T03 {
             } else {
                 judul = input.nextLine();
                 penulis = input.nextLine();
-                tahunterbit = input.nextInt();
+                tahunterbit = Integer.parseInt(input.nextLine());
                 penerbit = input.nextLine();
                 formatbukuelektrik = input.nextLine();
-                hargabeli = input.nextDouble();
-                minimummargin = input.nextDouble();
+                hargabeli = Double.parseDouble(input.nextLine());
+                minimummargin = Double.parseDouble(input.nextLine());
                 if (minimummargin > 0) {
                     kategoridiskon = "---";
                 } else {
@@ -34,8 +37,8 @@ public class T03 {
                         }
                     }
                 }
-                stok = input.nextInt();
-                rating = input.nextDouble();
+                stok = Integer.parseInt(input.nextLine());
+                rating = Double.parseDouble(input.nextLine());
                 if (rating >= 4.7) {
                     kategori = "Best Pick";
                 } else {
