@@ -7,7 +7,7 @@ public class T03 {
     public static void main(String[] args) {
         int stok, tahunterbit;
         String isbn, judul, penulis, penerbit, formatbukuelektrik, none, kategori, kategorirate, ending, kategoridiskon;
-        double hargabeli, minimummargin, rating;
+        double hargabeli, minimummargin, rating, diskon, margin, harga;
 
         kategorirate = "";
         do {
@@ -20,6 +20,9 @@ public class T03 {
                 penerbit = input.nextLine();
                 formatbukuelektrik = input.nextLine();
                 hargabeli = Double.parseDouble(input.nextLine());
+                if (hargabeli >= 0) {
+                    diskon = hargabeli * -1;
+                }
                 minimummargin = Double.parseDouble(input.nextLine());
                 if (minimummargin > 0) {
                     kategoridiskon = "---";
