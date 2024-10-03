@@ -1,16 +1,16 @@
-//12S24037-Maxwell Rumahorbo
-//12S24030-Sawasti Sihombing
+//122S24037-Maxwell Rumahorbo
+//12S24030-Swasti Sihombing
 
 import java.util.*;
 import java.lang.Math;
 
-public class JavaApplication {
+public class T03 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
         String iSBN, judul, penulis, tahunterbit, penerbit, formatbuku, kategori, kategoridiskon, kategoribuku;
         int stok;
-        double hargabeli, minimummargin, rating;
+        double hargabeli, minimummargin, rating, penilaianbuku;
 
         kategori = " ";
         do {
