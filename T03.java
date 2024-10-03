@@ -1,30 +1,15 @@
-//12S24037-Maxwell Rumahorbo
-//12S24030-Swasti Sihombing
 import java.util.*;
 import java.lang.Math;
 
-
-public class T03 {
+public class JavaApplication {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        String iSBN;
-        String judul;
-        String penulis;
-        String tahunterbit;
-        String penerbit;
-        String formatbuku;
-        double hargapembelian;
-        double minimummargin;
+        String iSBN, judul, penulis, tahunterbit, penerbit, formatbuku, kategori, kategoridiskon, kategoribuku;
         int stok;
-        double rating;
-        String kategori;
+        double hargabeli, minimummargin, rating;
 
         kategori = " ";
-        String kategoridiskon;
-        String kategoribuku;
-        double penilaianbuku;
-
         do {
             iSBN = input.nextLine();
             if (iSBN.equals("---")) {
@@ -39,15 +24,15 @@ public class T03 {
                     penerbit = penerbit;
                 }
                 formatbuku = input.nextLine();
-                hargapembelian = Double.parseDouble(input.nextLine());
+                hargabeli = Double.parseDouble(input.nextLine());
                 minimummargin = Double.parseDouble(input.nextLine());
                 if (minimummargin > 0) {
                     kategoridiskon = "---";
                 } else {
-                    if (minimummargin < -(hargapembelian * 40 / 100)) {
+                    if (minimummargin < -(hargabeli * 40 / 100)) {
                         kategoridiskon = "Once in a lifetime";
                     } else {
-                        if (minimummargin < -(hargapembelian * 20 / 100)) {
+                        if (minimummargin < -(hargabeli * 20 / 100)) {
                             kategoridiskon = "Never come twice";
                         } else {
                             kategoridiskon = "No regret";
@@ -80,7 +65,7 @@ public class T03 {
                 } else {
                     kategoribuku = "---";
                 }
-                System.out.println(iSBN + "|" + judul + "|" + penulis + "|" + tahunterbit + "|" + penerbit + "|" + formatbuku + "|" + hargapembelian + "|" + minimummargin + "|" + stok + "|" + rating + "|" + kategori + "|" + kategoridiskon + "|" + kategoribuku);
+                System.out.println(iSBN + "|" + judul + "|" + penulis + "|" + tahunterbit + "|" + penerbit + "|" + formatbuku + "|" + hargabeli + "|" + minimummargin + "|" + stok + "|" + rating + "|" + kategori + "|" + kategoridiskon + "|" + kategoribuku);
             }
         } while (!iSBN.equals("---"));
     }
