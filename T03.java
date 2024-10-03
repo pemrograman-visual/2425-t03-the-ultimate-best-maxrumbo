@@ -1,3 +1,6 @@
+//12S24037-Maxwell Rumahorbo
+//12S24030-Sawasti Sihombing
+
 import java.util.*;
 import java.lang.Math;
 
