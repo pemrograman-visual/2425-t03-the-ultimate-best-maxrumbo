@@ -4,18 +4,18 @@
         <attribute name="name" value="T02"/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-02 04:35:33 pm"/>
+        <attribute name="saved" value="2024-10-02 06:25:38 pm"/>
         <attribute name="created" value="QVNVUztMQVBUT1AtTTVQNEI0QkQ7MjAyMy0wOS0xNDsxMDoxNjozNyBBTTsyNjA3"/>
         <attribute name="edited" value="QVNVUztMQVBUT1AtTTVQNEI0QkQ7MjAyMy0wOS0xNDsxMTozNDoyMiBBTTs2OzI3MTU="/>
         <attribute name="edited" value="TGVub3ZvO0xBUFRPUC1EMU9DMjNLNjsyMDI0LTA5LTI5OzA4OjU4OjIzIGFtOzI7QVNVUztMQVBUT1AtTTVQNEI0QkQ7MjAyMy0wOS0xNDsxMDoxNjozNyBBTTtUMDMuZnByZzs2NDcw"/>
-        <attribute name="edited" value="TGVub3ZvO0xBUFRPUC1EMU9DMjNLNjsyMDI0LTEwLTAyOzA0OjM1OjMzIHBtOzc7MzA4MA=="/>
+        <attribute name="edited" value="TGVub3ZvO0xBUFRPUC1EMU9DMjNLNjsyMDI0LTEwLTAyOzA2OjI1OjM4IHBtOzU7MzA4NA=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="stok, tahunterbit" type="Integer" array="False" size=""/>
             <declare name="isbn, judul, penulis, penerbit, formatbukuelektrik, none, kategori, kategorirate, Ending, kategoridiskon" type="String" array="False" size=""/>
-            <declare name="hargabeli, minimummargin, rating, Diskon, Margin, Harga" type="Real" array="False" size=""/>
+            <declare name="hargabeli, minimummargin, rating" type="Real" array="False" size=""/>
             <assign variable="kategorirate" expression="&quot;&quot;"/>
             <do expression="ISBN=&quot;---&quot;">
                 <input variable="isbn"/>
@@ -28,12 +28,6 @@
                         <input variable="penerbit"/>
                         <input variable="formatbukuelektrik"/>
                         <input variable="hargabeli"/>
-                        <if expression="hargabeli&gt;=0">
-                            <then>
-                                <assign variable="Diskon" expression="hargabeli*-1"/>
-                            </then>
-                            <else/>
-                        </if>
                         <input variable="minimummargin"/>
                         <if expression="minimummargin&gt;0">
                             <then>
